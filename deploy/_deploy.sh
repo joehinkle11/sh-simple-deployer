@@ -77,7 +77,7 @@ printf "SendingTo: ${GREEN}$DESTINATION\n${NC}\n"
 # DEPLOYING
 # =================================================
 
-RSYNC_PARAMS=${2:-'-vrzuh'}
+RSYNC_PARAMS=${2:-'-vrzuh --delete'}
 
 # call rsync passing the directores, ignore list and ask to up using ssh
 
